@@ -25,3 +25,20 @@ module "network" {
   availability_zone_1 = var.availability_zone_1
   availability_zone_2 = var.availability_zone_2
 }
+
+module "rds" {
+  source = "../../modules/rds"
+
+  db_name       = var.db_name
+  db_username   = var.db_username
+  db_password   = var.db_password
+
+  db_instance_class = var.db_instance_class
+  allocated_storage = var.allocated_storage
+
+  backup_retention_period = var.backup_retention_period
+  deletion_protection     = var.deletion_protection
+
+  vpc_id             = module.network.vpc_id
+  private_subnet_ids = module.network.private_subnet_ids
+}

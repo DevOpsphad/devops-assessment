@@ -10,3 +10,17 @@ private_subnet_2_cidr = "10.0.4.0/24"
 
 availability_zone_1 = "ap-south-1a"
 availability_zone_2 = "ap-south-1b"
+
+db_name = "hoteldb"
+
+db_username = "postgres"
+
+db_password = "Password@123"
+
+db_instance_class = "db.t3.micro"
+
+allocated_storage = 20
+
+backup_retention_period = 3
+
+deletion_protection = false
