@@ -58,3 +58,7 @@ variable "backup_retention_period" {
 variable "deletion_protection" {
   type = bool
 }
+
+variable "execution_role_arn" {
+  type = string
+}

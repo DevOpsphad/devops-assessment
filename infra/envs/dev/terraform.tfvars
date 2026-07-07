@@ -24,3 +24,5 @@ allocated_storage = 20
 backup_retention_period = 3
 
 deletion_protection = false
+
+execution_role_arn = "arn:aws:iam::123456789012:role/ecsTaskExecutionRole"

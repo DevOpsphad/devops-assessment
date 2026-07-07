@@ -52,4 +52,6 @@ module "ecs" {
   private_subnet_ids = module.network.private_subnet_ids
 
   rds_security_group_id = module.rds.rds_security_group_id
+
+  execution_role_arn = var.execution_role_arn
 }
