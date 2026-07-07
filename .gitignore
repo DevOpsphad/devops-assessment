@@ -1,5 +1,15 @@
+# Terraform
 **/.terraform/
-**/.terraform/*
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
+
+# Backup files
+backup.sql
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
