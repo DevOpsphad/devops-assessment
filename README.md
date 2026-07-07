@@ -142,6 +142,17 @@ Get-Content .\backup.sql | docker exec -i hotel-postgres psql -U postgres -d hot
 
 ---
 
+
+## Validation
+
+terraform fmt
+
+terraform validate
+
+terraform plan
+
+
+
 ## Future Improvements
 
 - ECS Auto Scaling
